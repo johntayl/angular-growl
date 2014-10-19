@@ -2,6 +2,9 @@
 
 Angular module that adds growl message functionality. Growl messages are quick notification messages that are forcefully removed or removed after a short amount of time.
 
+## Requirements
+
+- AngularJS 1.3
 
 ## Usage
 
