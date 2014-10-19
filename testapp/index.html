@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom Angular Modules</title>
+        <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .growl-messages {
+            padding: 15px;
+            margin: 5px;
+        }
+        .growl-message {
+            padding: 15px;
+        }
+        .growl-message button {
+            float:right;
+            border: 0;
+            background: none;
+        }
+        .growl-message.notice {
+            background: lightblue;
+            color: blue;
+        }
+        .growl-message.success {
+            background: lightgreen;
+            color: green;
+        }
+        .growl-message.error {
+            background: lightcoral;
+            color: darkred;
+        }
+        </style>
+    </head>
+    <body ng-controller="RootController">
+
+        <h2>Add a new growl message.</h2>
+
+        <input type="text" ng-model="message"/>
+        <label>Type:
+            <select ng-model="status">
+                <option value="notice">notice</option>
+                <option value="success">success</option>
+                <option value="error">error</option>
+            </select>
+        </label>
+        <button ng-click="add()">Add</button>
+
+
+        <div growl-messages></div>
+
+        <!-- Dependencies -->
+        <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/app.js"></script>
+
+        <script type="text/javascript" src="/js/root.js"></script>
+
+        <script type="text/javascript" src="/js/growl/growl.js"></script>
+
+        <script type="text/javascript" src="/js/init.js"></script>
+    </body>
+</html>

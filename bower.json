@@ -1,0 +1,28 @@
+{
+  "name": "growl",
+  "version": "1.0.0",
+  "authors": [
+    "John <johntayl89@gmail.com>"
+  ],
+  "description": "Angular module for creating timed out growl messages",
+  "keywords": [
+    "growl",
+    "message",
+    "notification",
+    "angular",
+    "module",
+    "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.0",
+    "jquery": "~2.1.1"
+  }
+}
